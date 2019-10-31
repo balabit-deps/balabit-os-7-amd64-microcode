@@ -33,9 +33,9 @@ verbose()
 
 AUCODE_FW_DIR=/lib/firmware/amd-ucode
 if [ "$MODULES" = "most" ]; then
-    AMD64UCODE_INITRAMFS=early
+    AMD64UCODE_INITRAMFS=${AMD64UCODE_INITRAMFS:-early}
 else
-    AMD64UCODE_INITRAMFS=auto
+    AMD64UCODE_INITRAMFS=${AMD64UCODE_INITRAMFS:-auto}
 fi
 [ -r ${AMD64UCODE_CONFIG} ] && . ${AMD64UCODE_CONFIG}
 
