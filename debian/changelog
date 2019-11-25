@@ -1,3 +1,10 @@
+amd64-microcode (3.20191021.1+really3.20181128.1~ubuntu0.18.04.1) bionic-security; urgency=medium
+
+  * Revert to 3.20181128.1 version of microcode because of regressions on
+    certain hardware. (LP: #1853614)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 25 Nov 2019 14:52:06 -0500
+
 amd64-microcode (3.20191021.1ubuntu0.18.04.2) bionic; urgency=medium
 
   * Backport to Ubuntu 18.04 LTS (LP: #1850752)
